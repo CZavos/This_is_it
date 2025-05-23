@@ -10,7 +10,7 @@
             text-align: center;
         }
 
-header {
+div.header {
     		background-color: tomato;
     		color: white;
     		text-align: center;
@@ -34,6 +34,13 @@ img {
     		border: 3px solid green;
     		margin-top: 10px;
 	}
+img.lower {
+    		width: 300px;
+		height: 200px;
+    		border-radius: 60%;
+    		border: 5px solid green;
+    		margin-top: 10px;
+	}
         .table-style1 {
             width: 80%;
             margin: 20px auto;
@@ -50,9 +57,9 @@ img {
         }
 
         .table-style2 {
-            width: 60%;
+            width: 90%;
             margin: 20px auto;
-            border-collapse: collapse; /*makes the borders of adjacent table cells collapse into a single border*/
+            border-collapse: collapse;
             border: 2px solid darkgreen;
         }
 
@@ -72,18 +79,19 @@ img {
 	}
 
 div.mycontainer {
-  		width:66%;
-  		overflow:auto; /*browser will add scrollbars only when necessary*/
+  		width:75%;
+  		overflow:auto;
 	}
 	div.mycontainer div {
-  		width:50%;  
-  		float:left; /*makes an element float to the left side of its container*/
+  		width:33%;  
+  		float:left;
 	}
 .video		{
 		width: 35%;
     		margin: 10px auto;
     		text-align: center;
 		border: 3px solid green;
+		background-color: DarkTurquoise; 
 	}
         .list-style1 {
             list-style-type: square;
@@ -108,7 +116,7 @@ div.mycontainer {
 }
 
 .button-transition:hover {
-    background-color: darkorange;
+    background-color: tomato;
 }
 .flex-container {
     display: flex;
@@ -125,7 +133,7 @@ div.mycontainer {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     gap: 10px;
     background-color: #f8f8f8;
     padding: 10px;
@@ -140,35 +148,44 @@ div.mycontainer {
 </style>
 </head>
 <body>
-<header>
+<div class = "header">
     <h1>Welcome to My Personal Webpage</h1>
     <p>This is a simple example of an HTML and CSS personal webpage.</p>
-    <pre>
+    <pre style = "font-size: 24px";>
     Name: John Doe
     Age: 25
     Location: Kansas City
     </pre>
-<a href = "test.html" style = "color:black"; target = "_blank";>
-<button class = "button-transition">New Page Link</button></a>
+<div class="grid-container">
+    <div class="grid-item"><a href = “test.html” style = “color:black”; target = “_blank”;>
+<button class = "button-transition">New Page Link1</button></a></div>
+    <div class="grid-item"><a href = “test.html” style = “color:black”; target = “_blank”;>
+<button class = "button-transition">New Page Link2</button></a></div>
+    <div class="grid-item"><a href = “test.html” style = “color:black”; target = “_blank”;>
+<button class = "button-transition">New Page Link3</button></a></div>
+    <div class="grid-item"><a href = “test.html” style = “color:black”; target = “_blank”;>
+<button class = "button-transition">New Page Link4</button></a></div>
+    <div class="grid-item"><a href = “test.html” style = “color:black”; target = “_blank”;>
+<button class = "button-transition">New Page Link5</button></a></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+    <div class="grid-item"><a href = “test.html” style = “color:black”; target = “_blank”;>
+<button class = "button-transition">New Page Link6</button></a></div>
+</div>
+</div>
 
-</header>
-<section class="about">
-
-    <p>Check out my favorite website:
-
-<a href="https://www.npr.org/" target="_blank">National Public Radio</a>
-
-    </p>
-
-<a href="czavos@mokangoodwill.org" target="_blank">czavos@mokangoodwill.org</a>
-
-    <a href="https://www.flickr.com/photos/gramzavos/53928767183/in/dateposted/" target="_blank">
-
-        <img src="https://github.com/CZavos/images/blob/main/Gram%20-%20Xmas.jpg?raw=true" alt="Sample Image" title = "Click to see more Gram"></a>
-
-</section>
+<div class="flex-container">
+    <div class="flex-item"><p>Check out my favorite website:
+<a href="https://www.npr.org/" target="_blank">National Public Radio</a></p></div>
+  <div class="flex-item"> <a href="https://www.flickr.com/photos/gramzavos/53928767183/in/dateposted/" target="_blank">
+<img src="https://github.com/CZavos/images/blob/main/Gram%20-%20Xmas.jpg?raw=true" alt="Sample Image" title = "Click to see more Gram"></a></div>
+    <div class="flex-item"><p>Email me at the following address: <a href="czavos@mokangoodwill.org" target="_blank">czavos@mokangoodwill.org</a></p></div>
+</div>
+<br><br>
 <hr>
-    <h2>My Hobbies</h2>
+<br><br>
+<div class="grid-container">
+    <div class="grid-item"><h2>My Hobbies</h2>
     <table class="table-style1">
         <tr>
             <th>Hobby</th>
@@ -182,8 +199,9 @@ div.mycontainer {
             <td>2nd hobby</td>
             <td>time</td>
         </tr>
-    </table>
- <h2>My Favorite Movies</h2>
+    </table></div>
+    <div class="grid-item"></div><div class="grid-item"></div>
+    <div class="grid-item"><h2>My Favorite Movies</h2>
     <table class="table-style2">
         <tr>
             <th>Movie</th>
@@ -197,9 +215,12 @@ div.mycontainer {
             <td>2nd Movie</td>
             <td>Movie Year</td>
         </tr>
-    </table>
+    </table></div>
+</div>
+<br><br><br>
+
 <div class = "mycontainer">
-<div>
+<div style = "background-color: LightCyan";>
     <h2>My Favorite Foods</h2>
     <ul class="list-style1">
         <li>Pizza</li>
@@ -207,7 +228,15 @@ div.mycontainer {
         <li>Sushi</li>
     </ul>
 </div>
-<div>
+<div style = "background-color: DarkTurquoise";>
+    <h2>My Favorite Cars</h2>
+    <ul class="list-style1">
+        <li>Subaru</li>
+        <li>Diahatsu</li>
+        <li>Yugo</li>
+    </ul>
+</div>
+<div style = "background-color: Aquamarine";>
     <h2>My Favorite Drinks</h2>
     <ul class="list-style2">
         <li>Coffee</li>
@@ -216,40 +245,41 @@ div.mycontainer {
     </ul>
 </div>
 </div>
-<section class = "video">
+<br><br><br>
+<div class = "video">
     <h2>My Favorite Video</h2>
     <video width="480" height="360" controls>
         <source src="https://github.com/CZavos/images/blob/main/Gram%20Christmas.mp4?raw=true">
         Your browser does not support the video tag.
     </video>
-</section>
+</div>
     <h2>Embedded Website</h2>
     <iframe src="https://www.npr.org" width="600" height="400" style="border: none;"></iframe>
-<center><h2>Classes are held <em>Monday through Thursday</em> <del>Friday</del> from <mark>9:00am to 12:00 pm</mark> at our Goodwill AI Learning Lab located at 800 E. 18<sup>th</sup> St. <ins>Kansas City, MO</ins> 64108.  As of today, <sup>1</sup>/<sub>6</sub> of classes are completed.</h2></center>
+
 <form style="margin-top: 30px;">
-    <label for="email">Enter your email:</label>
+    <label for="email">Want to get ahold of me? Enter your email:</label>
     <input type="email" id="email" name="email" placeholder="you@example.com" required>
     <br><br>
-    <label for="bio">Tell us about yourself:</label><br>
+    <label for="bio">Tell me how I can help you:</label><br>
     <textarea id="bio" name="bio" rows="4" cols="40"></textarea>
     <br><br>
     <input type="submit" value="Submit">
 </form>
 <br>
-<div class="flex-container">
-    <div class="flex-item">Item 1</div>
-    <div class="flex-item">Item 2</div>
-    <div class="flex-item">Item 3</div>
-</div>
 <br>
-<div class="grid-container">
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">6</div>
-</div>
+
+<form>
+  <label for="user">Username:</label>
+  <input type="text" id="user" name="user" placeholder="Enter your username" required>
+  <br><br>
+  <label for="pass">Password:</label>
+  <input type="password" id="pass" name="pass" placeholder="Enter your password" required>
+  <br><br>
+  <input type="submit" value="Login">
+</form>
+<br><br><br>
+
+
 </body>
 
 </html>
