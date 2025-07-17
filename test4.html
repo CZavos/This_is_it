@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Webpage</title>
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: Arial;
+            color: gray;
+            text-align: center;
+        }
+	header {
+    		background-color: tomato;
+    		color: white;
+    		text-align: center;
+    		padding: 20px;
+	}
+
+
+        h1 {
+            color: navy;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+	img {
+    		width: 200px;
+    		border-radius: 50%;
+    		border: 3px solid green;
+    		margin-top: 10px;
+	}
+
+        .table-style1 {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid navy;
+        }
+
+        .table-style1 th, .table-style1 td {
+            border: 1px solid navy;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table-style1 th {
+            background-color: lightblue;
+        }
+
+        .table-style2 {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid darkgreen;
+        }
+
+        .table-style2 th, .table-style2 td {
+            border: 1px solid darkgreen;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table-style2 th {
+            background-color: lightgreen;
+        }
+
+       .about		{
+    		width: 60%;
+    		margin: 20px auto;
+    		text-align: left;
+	}
+
+	div.mycontainer {
+  		width:90%;
+  		overflow:auto;
+	
+	}
+	div.mycontainer div {
+  		width:33%;  
+  		float:left;
+	}
+
+	.video		{
+		width: 35%;
+    		margin: 10px auto;
+    		text-align: center;
+		border: 3px solid green;
+	}
+
+        .list-style1 {
+            list-style-type: square;
+            color: darkblue;
+            text-align: left;
+	    margin:20px;
+        }
+
+        .list-style2 {
+            list-style-type: circle;
+            color: darkgreen;
+            text-align: left;
+	    margin:20px
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Personal Webpage</h1>
+
+
+    <p>This is a simple example of an HTML and CSS personal webpage.</p>
+
+ 
+    <pre style = "font-size: 16px";>
+    Name: John Doe
+    Age: 25
+    Location: Kansas City
+    </pre>
+</header>
+<section class="about">
+    <p>Check out my favorite website: 
+        <a href="https://www.openai.com" target="_blank">OpenAI</a>
+    </p>
+<a href="czavos@mokangoodwill.org" target="_blank">czavos@mokangoodwill.org</a>
+    <a href="https://www.openai.com" target="_blank">
+        <img src="https://live.staticflickr.com/839/43622975051_18e3e4dee2.jpg" alt="Sample Image" title = "Dad and Gram - 2019">
+    </a>
+</section>
+    <hr>
+
+    <h2>My Hobbies</h2>
+    <table class="table-style1">
+        <tr>
+            <th>Hobby</th>
+            <th>Hours/Week</th>
+        </tr>
+        <tr>
+            <td>Reading</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Coding</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <h2>My Favorite Movies</h2>
+    <table class="table-style2">
+        <tr>
+            <th>Movie</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>Inception</td>
+            <td>2010</td>
+        </tr>
+        <tr>
+            <td>Interstellar</td>
+            <td>2014</td>
+        </tr>
+    </table>
+
+<div class = "mycontainer">
+<div>
+    <h2>My Favorite Foods</h2>
+    <ul class="list-style1">
+        <li>Pizza</li>
+        <li>Burgers</li>
+        <li>Sushi</li>
+    </ul>
+</div>
+<div>
+    <h2>My Favorite Drinks</h2>
+    <ul class="list-style2">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Orange Juice</li>
+    </ul>
+</div>
+<div>
+    <h2>My Favorite Animals</h2>
+    <ul class="list-style2">
+        <li>Penguin</li>
+        <li>Sloth</li>
+        <li>Lemur</li>
+    </ul>
+</div>
+</div>
+<section class = "video">
+    <h2>My Favorite Video</h2>
+    <video width="480" height="360" controls>
+        <source src="https://live.staticflickr.com/video/48258241016/031646f929/360p.mp4?s=eyJpIjo0ODI1ODI0MTAxNiwiZSI6MTc0MjQxOTA0NCwicyI6IjQ2MTRjYjIzYTUzYWQzOGE5MzJhMjc5NzI5MTAyZjRjNWE1M2YyOWQiLCJ2IjoxfQ">
+        Your browser does not support the video tag.
+    </video>
+</section>
+    <h2>Embedded Website</h2>
+    <iframe src="https://www.npr.org" width="600" height="400" style="border: none;"></iframe>
+
+</body>
+</html>
