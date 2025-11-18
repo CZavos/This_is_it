@@ -1,6 +1,7 @@
 import time
 import random  # Import the random module
 # Function to greet the user
+import asyncio
 def greet():
     print("Hello, adventurer! Welcome to the land of Python.")
     time.sleep(1)
@@ -88,5 +89,6 @@ def start_adventure():
     choose_path()
 
 start_adventure()
+
 
 
