@@ -36,20 +36,23 @@ submitBtn.addEventListener("click", async () => {
         }
 
     // STEP 2 → Ask password
-    } else if (currentStep === "askPassword") {
-        const password1 = input;
+} else if (currentStep === "askPassword") {
+    const password1 = input;
 
-        if (username === "student" && password1 === "123456") {
-            print("You are logged in as a student.");
-        } else if (username === "teacher" && password1 === "qwerty") {
-            print("You are logged in as a teacher.");
-        } else {
-            print("Incorrect password.");
-            await sleep(1500);
-            print("Refresh page and try again.");
-        }
+    if (username === "student" && password1 === "123456") {
+        print("You are logged in as a student.");
+        document.getElementById("main-link").style.display = "block";  // ← SHOW LINK
+    } else if (username === "teacher" && password1 === "qwerty") {
+        print("You are logged in as a teacher.");
+        document.getElementById("main-link").style.display = "block";  // ← SHOW LINK
+    } else {
+        print("Incorrect password.");
+        await sleep(1500);
+        print("Refresh page and try again.");
+    }
 
-        currentStep = "end";
+    currentStep = "end";
+
 
     // END → Game is finished
     } else if (currentStep === "end") {
