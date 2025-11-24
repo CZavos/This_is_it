@@ -1,3 +1,4 @@
+
 const gameText = document.getElementById('game-text');
 const userInput = document.getElementById('user-input');
 const submitBtn = document.getElementById('submit-btn');
