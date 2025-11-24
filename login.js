@@ -1,6 +1,6 @@
-const gameText = document.getElementById('game-text');
-const userInput = document.getElementById('user-input');
-const submitBtn = document.getElementById('submit-btn');
+const gameText = document.getElementById('game-text2');
+const userInput = document.getElementById('user-input2');
+const submitBtn = document.getElementById('submit-btn2');
 
 // Print to the screen
 function print(text) {
