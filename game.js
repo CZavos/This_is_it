@@ -1,11 +1,11 @@
 
-const gameText = document.getElementById('game-text');
-const userInput = document.getElementById('user-input');
-const submitBtn = document.getElementById('submit-btn');
+const gameText2 = document.getElementById('game-text');
+const userInput2 = document.getElementById('user-input');
+const submitBtn2 = document.getElementById('submit-btn');
 
 function print(text) {
-    gameText.innerText += text + "\n";
-    gameText.scrollTop = gameText.scrollHeight; // auto-scroll
+    gameText2.innerText += text + "\n";
+    gameText2.scrollTop = gameText2.scrollHeight; // auto-scroll
 }
 
 function sleep(ms) {
@@ -17,9 +17,9 @@ let playerName = "";
 let currentStep = "greet";
 
 // Main game loop
-submitBtn.addEventListener('click', async () => {
+submitBtn2.addEventListener('click', async () => {
     const input = userInput.value.trim();
-    userInput.value = "";
+    userInput2.value = "";
 
     if (currentStep === "greet") {
         print(`Nice to meet you, ${input}!`);
