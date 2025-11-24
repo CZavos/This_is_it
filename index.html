@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="login.js" defer></script>
     <title>My Personal Webpage</title>
 <style>
  body {
@@ -179,7 +178,40 @@ div.mycontainer {
     font-size: 16px;
     cursor: pointer;
 }
+.game-container2 {
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    font-family: monospace;
+    overflow-y: auto;
+}
 
+.game-text2 {
+    white-space: pre-line; /* preserves line breaks */
+    height: 420px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.game-input2 {
+    display: flex;
+}
+
+.user-input2 {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.submit-btn2 {
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 </style>
 </head>
@@ -194,7 +226,7 @@ div.mycontainer {
     </pre>
 <br>
 <hr>
-	<div id="game-text" style="
+	<div id="game-text2" style="
     width: 90%;
     height: 300px;
     overflow-y: auto;
@@ -202,8 +234,8 @@ div.mycontainer {
     padding: 10px;
 "></div>
 
-<input id="user-input" type="text" placeholder="Type here...">
-<button id="submit-btn">Submit</button>
+<input id="user-input2" type="text" placeholder="Type here...">
+<button id="submit-btn2">Submit</button>
 
 <script src="login.js"></script>
 
