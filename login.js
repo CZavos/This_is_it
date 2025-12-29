@@ -18,18 +18,18 @@ let username = "";
 
 // Button click handler
 submitBtn.addEventListener("click", async () => {
-    const input = userInput.value.trim();
-    userInput.value = "";
+const input = userInput.value.trim();
+userInput.value = "";
 
     // STEP 1 → Ask username
     if (currentStep === "askUsername") {
         username = input;
 
-        if (username === "student" || username === "teacher") {
-            print("Thank you.");
+if (username === "student" || username === "teacher") {
+        print("Thank you.");
             await sleep(1000);
             print("Please input your password:");
-            currentStep = "askPassword";
+        currentStep = "askPassword";
         } else {
             print("Incorrect username. Please refresh page and try again.");
             currentStep = "end";
